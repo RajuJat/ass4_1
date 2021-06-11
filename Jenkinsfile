@@ -1,14 +1,14 @@
 pipeline{
   agent any
   environment{
-	imagename = "ynsaiyadav/ass4_1"
+	imagename = "RajuJat/ass4_1"
 	dockerImage = ''
   }
 	  stages{
 		stage("Cloning Git"){
 		  steps{
 			echo 'Cloning Repo...'
-			git credentialsId: '56925a7e-0ac9-441f-9e4a-51abb553e65f', url: 'https://github.com/ynsaiyadav/ass4_1.git'
+			git credentialsId: '56925a7e-0ac9-441f-9e4a-51abb553e65f', url: 'https://github.com/RajuJat/ass4_1.git'
 		  }
 		}
 		stage('Building image') {
